@@ -1,0 +1,40 @@
+.button-more {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+%round {
+    border-radius: 50%;
+    background: #a0a9b2;
+    width: 4px;
+    height: 4px;
+
+}
+
+.button-more__icon  {
+    position: relative;
+    @extend %round;
+
+   &::before {
+    position: absolute;
+    content: '';
+    top: -8px;
+    left: 0;
+    @extend %round;
+
+ }
+
+   &::after {
+    position: absolute;
+    content: '';
+    bottom: -8px;
+    left: 0;
+    @extend %round;
+
+ }
+ 
+}

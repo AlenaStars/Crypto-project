@@ -1,0 +1,44 @@
+.header-icon {
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+
+    border-radius: 50%;
+    background: #f2f5fa;
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.2s ease-in;
+
+    &:hover {
+        background-color: #d6e3f7;
+    }
+
+    &--new {
+        position: relative;
+    }
+
+    &--new::before {
+        content: '';
+        position: absolute;
+        bottom: 50%;
+        left: 50%;
+        margin-bottom: 1px;
+        // transform: translate(-50%, -50%);
+
+
+        display: block;
+        width: 8px;
+        height: 7px;
+        border-radius: 50%;
+        background-color: #ff5e5e;
+        border: #fff solid 2px;
+    }
+}   
+
+
+
